@@ -1,9 +1,9 @@
-package extension.androidtools;
+package android;
 
 #if (!android && !native)
 #error 'extension-androidtools is not supported on your current platform'
 #end
-import extension.androidtools.jni.JNICache;
+import android.jni.JNICache;
 import lime.app.Event;
 import lime.math.Rectangle;
 import lime.system.JNI;

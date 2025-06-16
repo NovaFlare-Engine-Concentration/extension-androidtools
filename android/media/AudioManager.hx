@@ -1,10 +1,10 @@
-package extension.androidtools.media;
+package android.media;
 
 import haxe.macro.Tools.TTypedExprTools;
 #if (!android && !native)
 #error 'extension-androidtools is not supported on your current platform'
 #end
-import extension.androidtools.jni.JNICache;
+import android.jni.JNICache;
 import lime.app.Event;
 import lime.system.JNI;
 

@@ -1,4 +1,4 @@
-package extension.androidtools.jni;
+package android.jni;
 
 #if android
 import lime.system.JNI;

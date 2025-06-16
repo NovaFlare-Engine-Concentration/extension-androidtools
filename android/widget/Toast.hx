@@ -1,9 +1,9 @@
-package extension.androidtools.widget;
+package android.widget;
 
 #if (!android && !native)
 #error 'extension-androidtools is not supported on your current platform'
 #end
-import extension.androidtools.jni.JNICache;
+import android.jni.JNICache;
 
 /**
  * Utility class for displaying toast messages on Android via JNI.

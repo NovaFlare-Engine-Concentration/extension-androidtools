@@ -18,7 +18,7 @@
 
 	<haxeflag name="-dce" value="full" />
 
-	<haxeflag name="--macro" value="include('extension.androidtools')" />
+	<haxeflag name="--macro" value="include('android')" />
 
 	<section if="cpp">
 		<haxedef name="HXCPP_CHECK_POINTER" />

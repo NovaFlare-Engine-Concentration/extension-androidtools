@@ -1,9 +1,9 @@
-package extension.androidtools.callback;
+package android.callback;
 
 #if (!android && !native)
 #error 'extension-androidtools is not supported on your current platform'
 #end
-import extension.androidtools.jni.JNICache;
+import android.jni.JNICache;
 import haxe.Json;
 import lime.app.Event;
 import lime.system.JNI;

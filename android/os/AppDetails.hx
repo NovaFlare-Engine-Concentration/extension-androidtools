@@ -1,4 +1,4 @@
-package extension.androidtools.os;
+package android.os;
 
 #if (!android && !native)
 #error 'extension-androidtools is not supported on your current platform'

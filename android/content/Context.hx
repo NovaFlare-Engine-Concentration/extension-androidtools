@@ -1,10 +1,10 @@
-package extension.androidtools.content;
+package android.content;
 
 #if (!android && !native)
 #error 'extension-androidtools is not supported on your current platform'
 #end
-import extension.androidtools.jni.JNICache;
-import extension.androidtools.jni.JNIUtil;
+import android.jni.JNICache;
+import android.jni.JNIUtil;
 
 /**
  * This class provides access to directories associated with the application context using JNI calls.

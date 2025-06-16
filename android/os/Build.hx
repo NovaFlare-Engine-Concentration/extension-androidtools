@@ -1,10 +1,10 @@
-package extension.androidtools.os;
+package android.os;
 
 import lime.system.JNI.JNIStaticField;
 #if (!android && !native)
 #error 'extension-androidtools is not supported on your current platform'
 #end
-import extension.androidtools.jni.JNICache;
+import android.jni.JNICache;
 
 /**
  * Various info about the current build, extracted from system properties.

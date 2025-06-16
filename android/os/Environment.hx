@@ -1,10 +1,10 @@
-package extension.androidtools.os;
+package android.os;
 
 #if (!android && !native)
 #error 'extension-androidtools is not supported on your current platform'
 #end
-import extension.androidtools.jni.JNICache;
-import extension.androidtools.jni.JNIUtil;
+import android.jni.JNICache;
+import android.jni.JNIUtil;
 
 /**
  * This class provides access to environment variables and directories on the device
