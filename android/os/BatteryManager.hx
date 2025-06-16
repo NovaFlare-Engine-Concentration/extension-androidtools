@@ -37,7 +37,7 @@ class BatteryManager
 	public static final BATTERY_PROPERTY_ENERGY_COUNTER:Int = 5;
 
 	@:noCompletion
-	private var constructor:Dynamic;
+	private var constructor:Dynamic = null;
 
 	/**
 	 * Constructs a new instance of BatteryManager.
@@ -46,7 +46,9 @@ class BatteryManager
 	{
 		var method = JNICache.createStaticMethod('org/haxe/extension/Tools', 'getBatteryManager', '()Landroid/os/BatteryManager;');
 		if (method != null) {
-    			constructor = method();
+    			try {
+                		constructor = method();
+            		}
 		}
 	}
 
