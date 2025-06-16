@@ -44,7 +44,7 @@ class BatteryManager
 	 */
 	public function new():Void
 	{
-		constructor = JNICache.createStaticMethod('org/haxe/extension/Tools', 'getBatteryManager', '()Landroid/os/BatteryManager;')();
+		var method = JNICache.createStaticMethod('org/haxe/extension/Tools', 'getBatteryManager', '()Landroid/os/BatteryManager;');
 		if (method != null) {
     			constructor = method();
 		}
